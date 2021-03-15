@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whatares",
+      "handler": "whatare.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whatares/count",
+      "handler": "whatare.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whatares/:id",
+      "handler": "whatare.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/whatares",
+      "handler": "whatare.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whatares/:id",
+      "handler": "whatare.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whatares/:id",
+      "handler": "whatare.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

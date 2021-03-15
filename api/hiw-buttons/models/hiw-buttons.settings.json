@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hiw_buttons",
+  "info": {
+    "name": "HIW Buttons",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "howitwork": {
+      "model": "howitworks",
+      "via": "hiw_buttons"
+    }
+  }
+}

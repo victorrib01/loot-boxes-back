@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boxes",
+  "info": {
+    "name": "Boxes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "float"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "box_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "boxbuttons": {
+      "via": "box",
+      "collection": "boxbuttons"
+    }
+  }
+}

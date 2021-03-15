@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hiw-buttons",
+      "handler": "hiw-buttons.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hiw-buttons/count",
+      "handler": "hiw-buttons.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hiw-buttons/:id",
+      "handler": "hiw-buttons.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hiw-buttons",
+      "handler": "hiw-buttons.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hiw-buttons/:id",
+      "handler": "hiw-buttons.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hiw-buttons/:id",
+      "handler": "hiw-buttons.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whatares",
+  "info": {
+    "name": "What Are",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

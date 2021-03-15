@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/howitworks",
+      "handler": "howitworks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/howitworks/count",
+      "handler": "howitworks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/howitworks/:id",
+      "handler": "howitworks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/howitworks",
+      "handler": "howitworks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/howitworks/:id",
+      "handler": "howitworks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/howitworks/:id",
+      "handler": "howitworks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

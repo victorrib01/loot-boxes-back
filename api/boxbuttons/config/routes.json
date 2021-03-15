@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/boxbuttons",
+      "handler": "boxbuttons.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boxbuttons/count",
+      "handler": "boxbuttons.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boxbuttons/:id",
+      "handler": "boxbuttons.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/boxbuttons",
+      "handler": "boxbuttons.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/boxbuttons/:id",
+      "handler": "boxbuttons.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/boxbuttons/:id",
+      "handler": "boxbuttons.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
